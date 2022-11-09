@@ -1,4 +1,3 @@
-# import the necessary packages
 from scipy.spatial import distance as dist
 from imutils import perspective
 from imutils import contours
@@ -12,8 +11,7 @@ mussles = []
 def midpoint(ptA, ptB):
     return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
 
-#kamera = cv2.VideoCapture(0)
-kamera=cv2.VideoCapture("http://192.168.19.170:8081/")
+kamera = cv2.VideoCapture(0)
 
 while True:
     ret, file_path = kamera.read()
