@@ -41,7 +41,7 @@ while True:
 
     print("pre filter count: ", len(cnts))
 
-    #cnts = [c for c in cnts if cv2.contourArea(c) > 90 ]
+    cnts = [c for c in cnts if cv2.contourArea(c) > 90 ]
     print("Post-filter count: ", len(cnts))
 
     for idx, c in enumerate(cnts):
